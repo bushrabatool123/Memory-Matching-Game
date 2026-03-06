@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gamem.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Memory Match</h1>
+    <p class="subtitle">Flip the cards. Find the pairs.</p>
+  </header>
+
+  <section id="controls">
+
+    <div class="level-btns">
+      <button class="lvl-btn active" data-level="easy">Easy &nbsp;·&nbsp; 8 cards</button>
+      <button class="lvl-btn" data-level="hard">Hard &nbsp;·&nbsp; 16 cards</button>
+    </div>
+
+    <div id="stats">
+      <span>Moves: <strong id="moves">0</strong></span>
+      <span>Time: <strong id="timer">0</strong>s</span>
+      <span>Pairs: <strong id="pairs">0</strong></span>
+      <button id="restartBtn">↺ Restart</button>
+    </div>
+
+  </section>
+
+  <section id="board-section">
+    <div id="gameBoard"></div>
+  </section>
+
+  <div id="winMsg">
+    <div class="win-box">
+      <h2>You Win! 🎉</h2>
+      <p id="winStats"></p>
+      <button id="playAgainBtn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="gamem.js"></script>
+
+</body>
+</html>
